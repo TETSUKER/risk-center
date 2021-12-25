@@ -1,0 +1,20 @@
+/* .tables {
+    display: flex;
+    align-items: flex-start;
+} */
+
+.tables table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.tables td, .tables th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.tables tr:nth-child(even) {
+    background-color: #dddddd;
+}

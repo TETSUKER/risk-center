@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Risk_Center</title>
+</head>
+<body>
+    <div class="App" style="display: flex; justify-content: start; align-items: flex-start;">
+        <table class="create-user" cellpadding="11">
+            <th>Create user</th>
+            <tr>
+                <td class="label">Name</td>
+                <td><input type="text" name="name" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Password</td>
+                <td><input type="text" name="password" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Age</td>
+                <td><input type="text" name="age" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Country</td>
+                <td><input type="text" name="country" required /></td>
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <button type="submit">Send</button>
+                    <button type="button">Cancel</button>
+                </td>
+            </tr>
+            <tr class="response"></tr>
+        </table>
+        <table class="create-transaction" cellpadding="11">
+            <th>Create transaction</th>
+            <tr>
+                <td class="label">Name</td>
+                <td><input type="text" name="name" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Password</td>
+                <td><input type="text" name="password" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Cash</td>
+                <td><input type="number" name="cash" required /></td>
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <button type="submit">Send</button>
+                    <button type="button">Cancel</button>
+                </td>
+            </tr>
+            <tr class="response"></tr>
+        </table>
+        <table class="change-risk-parametres" cellpadding="11">
+            <th>Change risk parametres</th>
+            <tr>
+                <td class="label">Max pass try</td>
+                <td><input type="text" name="max-pass" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Min age</td>
+                <td><input type="text" name="min-age" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Risk country</td>
+                <td><input type="text" name="risk-country" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Max sum</td>
+                <td><input type="text" name="max-sum" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Max transactions</td>
+                <td><input type="text" name="max-transactions" required /></td>
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <button type="submit">Send</button>
+                    <button type="button">Cancel</button>
+                </td>
+            </tr>
+            <tr class="response"></tr>
+        </table>
+        <div class="query_response"></div>
+    </div>
+    <div class="tables">
+        <div class="table"></div>
+        <div class="select">
+            <select id="cars" name="cars">
+                <option value="ALL">All risks</option>
+                <option value="WRONG_PASS">Wrong pass</option>
+                <option value="MAX_SUM">Max sum</option>
+                <option value="MIN_AGE">Min age</option>
+                <option value="RISK_COUNTRY">Risk country</option>
+                <option value="MAX_TS">Max transactions</option>
+                <option value="MAX_PASS">Max pass attemps</option>
+            </select>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
